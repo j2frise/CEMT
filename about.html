@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="assets/css/educa.css">
 
 	<link rel="stylesheet" href="assets/rs-plugin/css/settings.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -72,7 +73,7 @@
 					</div>
 				</header>
 				
-				<div class="page-heading about-heading">
+				<div class="page-heading about-heading" data-aos="zoom-in">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
@@ -137,13 +138,13 @@
 								<div class="col-md-5">
 									<div class="left-images">
 										<div class="row">
-											<div class="col-md-12">
+											<div class="col-md-12" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="300" data-aos-easing="ease-in-sine">
 												<a href="javascript:;"><img src="img/h.png" alt=""></a>
 											</div>
-											<div class="col-md-6 col-xs-6">
+											<div class="col-md-6 col-xs-6" data-aos="fade-up" data-aos-duration="3000">
 												<a href="javascript:;"><img src="img/r.jpg" alt=""></a>
 											</div>
-											<div class="col-md-6 col-xs-6">
+											<div class="col-md-6 col-xs-6" data-aos="fade-up" data-aos-duration="3000">
 												<a href="javascript:;"><img src="img/s.jpg" alt=""></a>
 											</div>
 										</div>
@@ -317,7 +318,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-3">
+							<div class="col-md-3" data-aos="fade-up" data-aos-duration="2000">
 								<div class="teacher-item">
 									<div class="thumb-holder">
 										<img src="img/promo.jpg" alt="">
@@ -336,7 +337,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3" data-aos="fade-up" data-aos-duration="2500">
 								<div class="teacher-item">
 									<div class="thumb-holder">
 										<img src="img/promo.jpg" alt="">
@@ -355,7 +356,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3" data-aos="fade-up" data-aos-duration="2750">
 								<div class="teacher-item">
 									<div class="thumb-holder">
 										<img src="img/promo.jpg" alt="">
@@ -374,7 +375,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3" data-aos="fade-up" data-aos-duration="3000">
 								<div class="teacher-item">
 									<div class="thumb-holder">
 										<img src="img/promo.jpg" alt="">
@@ -515,10 +516,15 @@
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
     <script src="assets/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
 	<script type="text/javascript" src="assets/js/plugins.js"></script>
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
 </body>
 </html>

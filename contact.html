@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="assets/css/educa.css">
 
 	<link rel="stylesheet" href="assets/rs-plugin/css/settings.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -72,7 +73,7 @@
 					</div>
 				</header>
 				
-				<div class="page-heading news-heading">
+				<div class="page-heading news-heading" data-aos="zoom-in">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-12">
@@ -121,7 +122,7 @@
 				<section class="contact-form">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-6" data-aos="fade-right" data-aos-duration="3000">
 								<div class="location-contact">
 									<div class="widget-heading">
 										<h4>Géolocalisation</h4>
@@ -295,7 +296,12 @@
         var map = new google.maps.Map(mapCanvas, mapOptions)
       }
       google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+	</script>
+	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
 </body>
 </html>
